@@ -5,7 +5,12 @@
 #' not install dart sass.
 #' @param asset_input_path `string`: defining the folder name from where files need to be picked or you can set an environment variable called `sass_input_path`
 #' @param asset_output_path `string`: defining the folder name or the file name where files need to be created or you can set an environment variable called `sass_output_path`
-#' @example sass_folder( asset_input_folder = "E:\\Coding\\R_code\\github\\some_project\\app\\js\\", asset_output_folder = "E:\\Coding\\R_code\\github\\some_project\\app\\dummy\\")
+#' @examples sass_run(
+#'     asset_input_path = "app/styles/",
+#'     asset_output_path = "app/static/css/",
+#'     compressed = TRUE,
+#'     watch = FALSE
+#' )
 #' @return Binary: returns console output given by the binary file
 #' @noRd
 #' @export
